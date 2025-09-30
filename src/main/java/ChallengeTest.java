@@ -34,7 +34,7 @@ public class ChallengeTest {
 
             char currentChar = givenString.charAt(right);
             map.put(currentChar,map.getOrDefault(currentChar,0) + 1);
-            while (map.size() > k){
+            while (map.size() > k ){
                 char leftChar = givenString.charAt(left);
                 map.put(leftChar,map.get(leftChar) -1 ); // decrease value of left
                 if(map.get(leftChar) == 0){
